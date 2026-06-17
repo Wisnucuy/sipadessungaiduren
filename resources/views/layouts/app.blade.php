@@ -3,31 +3,31 @@
 <head>
 <script>
 (function (m, a, z, e) {
-    var s, t, u, v;
-    try {
+  var s, t, u, v;
+  try {
     t = m.sessionStorage.getItem('maze-us');
-    } catch (err) {}
+  } catch (err) {}
 
-    if (!t) {
+  if (!t) {
     t = new Date().getTime();
     try {
-        m.sessionStorage.setItem('maze-us', t);
+      m.sessionStorage.setItem('maze-us', t);
     } catch (err) {}
-    }
+  }
 
-    u = document.currentScript || (function () {
+  u = document.currentScript || (function () {
     var w = document.getElementsByTagName('script');
     return w[w.length - 1];
-    })();
-    v = u && u.nonce;
+  })();
+  v = u && u.nonce;
 
-    s = a.createElement('script');
-    s.src = z + '?apiKey=' + e;
-    s.async = true;
-    if (v) s.setAttribute('nonce', v);
-    a.getElementsByTagName('head')[0].appendChild(s);
-    m.mazeUniversalSnippetApiKey = e;
-})(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '53c69b73-0547-4a18-bd66-4533bc6f6c24');
+  s = a.createElement('script');
+  s.src = z + '?apiKey=' + e;
+  s.async = true;
+  if (v) s.setAttribute('nonce', v);
+  a.getElementsByTagName('head')[0].appendChild(s);
+  m.mazeUniversalSnippetApiKey = e;
+})(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '261ff951-2586-41d6-b312-d053e23738d3');
 </script>    
 
     <meta charset="UTF-8">
